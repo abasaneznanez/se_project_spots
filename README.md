@@ -53,7 +53,8 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 5.The link to your deployed project on GitHub Pages
 This webpage is deployed to GitHub Pages
-Depoloyment link:
+
+[Deployment link:](https://abasaneznanez.github.io/se_project_spots/)
 
 - Images
   [text](spots-images)
