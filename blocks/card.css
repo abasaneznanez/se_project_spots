@@ -5,15 +5,24 @@
 .card__image {
   display: block;
   width: 413px;
-  height: 413px;
+  height: 445px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.card__title {
+  margin: 12px 0 0;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
 }
 
 .card__like-btn {
@@ -23,4 +32,14 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+}
+
+@media screen and (max-width: 627px) {
+  .card__image {
+    display: block;
+    width: 288px;
+    height: 288px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 }
