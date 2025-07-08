@@ -27,7 +27,7 @@
   justify-content: space-between;
   margin-top: 12px;
 }
-/* cursor:pointer;  background-image: url(../spots-images/heart.svg); */
+
 .card__like-btn {
   background-image: url(../spots-images/heart\ dark\ hover.svg);
   width: 23px;
@@ -37,7 +37,7 @@
   opacity: 40%;
   cursor: pointer;
 }
-/*background-image: url(../spots-images/heart\ dark\ hover.svg);  opacity: 40%;  */
+
 .card__like-btn:hover {
   background-image: url(../spots-images/heart\ dark\ hover.svg);
   width: 23px;
