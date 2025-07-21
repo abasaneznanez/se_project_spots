@@ -1,4 +1,4 @@
-# Project 3: Spots
+# Project 3: Spots / Spots: project 4, stage 2 opening and closing the modals
 
 Sprint 3 - Final Project - Spots myvideo link: https://drive.google.com/file/d/1dAbtD1K8aMwfXTZzYSfPKJHq3MNBF8yN/view?usp=sharing
 
