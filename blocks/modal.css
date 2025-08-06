@@ -121,8 +121,6 @@
   .modal__close-btn {
     top: 12px;
     right: 12px;
-    bottom: 24px;
-    left: 0;
   }
 
   .modal__title {
