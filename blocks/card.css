@@ -10,7 +10,11 @@
   object-fit: cover;
   border-radius: 8px;
 }
-
+/*DOT REVISION ADDITION :hover  and  cursor: pointer; */
+.card__image:hover {
+  cursor: pointer;
+}
+/*DOT REVISION cursor:pointer; background-repeat: no-repeat; background-position: center; */
 .card__delete-btn {
   width: 32px;
   height: 32px;
@@ -18,16 +22,22 @@
   top: 10px;
   right: 10px;
   background-image: url(../spots-images/deletebutton.svg);
-  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: transparent;
+  border: none;
   opacity: 1;
+  cursor: pointer;
 }
-
+/*DOT REVISION cursor:pointer; background-repeat: no-repeat; background-position: center; */
 .card__delete-btn:hover {
   background-image: url(../spots-images/deletebuttonhover.svg);
-  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: transparent;
+  border: none;
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .card__title {
@@ -47,25 +57,22 @@
   justify-content: space-between;
   margin-top: 12px;
 }
-
+/*DOT REVISION background-repeat: no-repeat; opacity: 0.4;*/
 .card__like-btn {
   background-image: url(../spots-images/heart\ dark\ hover.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
   width: 23px;
   height: 20px;
   border: none;
-  background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
 }
-
+/*DOT REVISION  eliminate because are repeated width, height, border, background-color, and cursor & keep backgroung-image:  opacity:  and background-repeat: no-repeat*/
 .card__like-btn:hover {
   background-image: url(../spots-images/heart\ dark\ hover.svg);
-  width: 23px;
-  height: 20px;
-  border: none;
-  background-color: transparent;
+  background-repeat: no-repeat;
   opacity: 1;
-  cursor: pointer;
 }
 
 .card__like-btn_active {

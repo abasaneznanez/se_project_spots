@@ -33,7 +33,8 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(
   ".modal__close_type_preview"
 );
-const previewInputEl = previewModal.querySelector(".modal__image");
+//DOT REVISION CHANGE previewInputEl for previewImageEl
+const previewImageEl = previewModal.querySelector(".modal__image");
 const previewModalCaption = previewModal.querySelector(".modal__caption");
 previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
@@ -58,11 +59,10 @@ function getCardElement(data) {
   cardLikeBtnEl.addEventListener("click", () => {
     cardLikeBtnEl.classList.toggle("card__like-btn_active");
   });
-
+  // DOT REVISION ELIMINATE     cardElement = null;
   const cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
   cardDeleteBtnEl.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
   });
 
   cardImageEl.addEventListener("click", () => {
@@ -143,15 +143,16 @@ newPostCloseBtn.addEventListener("click", function () {
 //  Handle submit of add card form
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-
+  //DOT CHANGE  name: nameInput.value, FOR name:cardCaptionInput.value, AND CHANGE link: linkInput.value,  FOR link: cardImageInput.value,
   const inputValues = {
-    name: nameInput.value,
-    link: linkInput.value,
+    name: cardCaptionInput.value,
+    link: cardImageInput.value,
   };
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
+  addCardFormElement.reset();
   closeModal(newPostModal);
 }
 
