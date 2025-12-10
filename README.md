@@ -48,7 +48,7 @@ This project is made so all the elements are displayed correctly on popular scre
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 
 4.Pictures, GIFs, or screenshots that detail the project features (highly recommended)
-[text](spots-images)
+[text](images)
 ![alt text](image.png)
 
 5.The link to your deployed project on GitHub Pages
@@ -57,7 +57,7 @@ This webpage is deployed to GitHub Pages
 [Deployment link:](https://abasaneznanez.github.io/se_project_spots/)
 
 - Images
-  [text](spots-images)
+  [text](images)
 
 **Figma**
 

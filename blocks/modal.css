@@ -36,7 +36,7 @@
 /*DOT REVISION ADDITION  replace opacity:40% for opacity: 0.4; */
 .modal__close-btn {
   position: absolute;
-  background-image: url(../spots-images/close\ icon.svg);
+  background-image: url(../images/close\ icon.svg);
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -48,22 +48,26 @@
 }
 /*DOT REVISION ADDITION erase position:absolute; background-color: transparent; add cursor: pointer; */
 .modal__close-btn:hover {
-  background-image: url(../spots-images/close\ icon\ hover.svg);
+  background-image: url(../images/close\ icon\ hover.svg);
   cursor: pointer;
   opacity: 1;
 }
-/*DOT REVISION ADDITION   change the class  .modal__close_type_preview for .modal__close-btn_type_preview */
-.modal__close-btn_type_preview {
+/*
+12/9/2025 Lindelwe Myeza ask me to go back to the class as I had it .modal__close_type_preview so it match with the HTML class.
+12/7/2025 DOT REVISION ADDITION   change the class  .modal__close_type_preview for .modal__close-btn_type_preview
+ */
+.modal__close_type_preview {
   top: 0;
   right: -52.5px;
-  background-image: url(../spots-images/deletebutton\ white\ x\ black\ backgrd.svg);
+  background-image: url(../images/deletebutton\ gray\ x\ black\ backgrd.svg);
 }
 /*DOT REVISION ADDITION  replace :hoover for :hover change the class  .modal__close_type_preview for .modal__close-btn_type_preview */
-.modal__close-btn_type_preview:hover {
+.modal__close_type_preview:hover {
   position: absolute;
-  background-image: url(../spots-images/deletebutton\ gray\ x\ black\ backgrd.svg);
+  background-image: url(../images/deletebutton\ white\ x\ black\ backgrd.svg);
   background-color: transparent;
 }
+
 /*DOT REVISION ADDITION remove  width: 169px;
   height: 32px; gap: 421px;*/
 .modal__title {
@@ -75,11 +79,10 @@
 
   margin: 0 0 32px;
 }
-/*DOT REVISION ADDITION align-items: flex-end;*/
+/*DOT REVISION RECOMMENDED but I did not liked how it looked  align-items: flex-end;*/
 .modal__form {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 32px;
   justify-content: center;
 }
@@ -153,7 +156,7 @@ padding: 4px 8px; ELIMINATE   height: 18px;*/
 .modal__caption {
   position: absolute;
   left: 0;
-  top: calc(100% +10px);
+  top: calc(100% + 10px);
   background-color: #212121;
   color: #fff;
   border-radius: 8px;
@@ -196,7 +199,7 @@ padding: 4px 8px; ELIMINATE   height: 18px;*/
 
 @media screen and (max-width: 627px) {
   /*placed below @media query 480px to avoid being overwritten*/
-  .modal__close_type_preview {
+  .modal__close-btn_type_preview {
     top: -48px;
     right: 0;
   }
