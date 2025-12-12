@@ -53,16 +53,17 @@
   opacity: 1;
 }
 /*
+12/12/2025 Marina Viriyalova asked me to change the class  .modal__close_type_preview for .modal__close-btn_type_preview
 12/9/2025 Lindelwe Myeza ask me to go back to the class as I had it .modal__close_type_preview so it match with the HTML class.
 12/7/2025 DOT REVISION ADDITION   change the class  .modal__close_type_preview for .modal__close-btn_type_preview
  */
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
   background-image: url(../images/deletebutton\ gray\ x\ black\ backgrd.svg);
 }
 /*DOT REVISION ADDITION  replace :hoover for :hover change the class  .modal__close_type_preview for .modal__close-btn_type_preview */
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   position: absolute;
   background-image: url(../images/deletebutton\ white\ x\ black\ backgrd.svg);
   background-color: transparent;
@@ -86,7 +87,9 @@
   gap: 32px;
   justify-content: center;
 }
-/*DOT REVISION ADDITION remove height:18px*/
+/*
+12/12/2025  Marina asked me to change margin: 0 0 32px; to margin: 0;
+DOT REVISION ADDITION remove height:18px*/
 .modal__label {
   font-size: 16px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -94,7 +97,7 @@
   font-weight: 500;
   line-height: 110.00000000000001%;
   padding: 0 0 8px;
-  margin: 0 0 32px;
+  margin: 0;
 }
 
 .modal__input {
@@ -114,13 +117,15 @@
 .modal__input::placeholder {
   color: #2121214d;
 }
-/*DOT REVISION eliminate from margin: 32px 474px 0 0; the 474px*/
+/*
+12/12/2025 Marina asked me to change margin: 32px 0 0; for margin: 0;
+DOT REVISION eliminate from margin: 32px 474px 0 0; the 474px*/
 .modal__submit-btn {
   max-width: 156px;
   width: 100%;
   height: 52px;
   padding: 18px 32px;
-  margin: 32px 0 0;
+  margin: 0;
   background-color: #212121;
   border-radius: 8px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -146,7 +151,9 @@
   display: block;
   border-radius: 8px;
 }
-/*DOT REVISION ADD position: absolute;
+/*
+2/12/2025 Marina asked me to change margin: 16px 0px; for margin: 0;
+DOT REVISION ADD position: absolute;
 left: 0;
 top: calc(100% + 10px);
 background-color: #212121;
@@ -160,13 +167,12 @@ padding: 4px 8px; ELIMINATE   height: 18px;*/
   background-color: #212121;
   color: #fff;
   border-radius: 8px;
-
   font-size: 16px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   line-height: 110.00000000000001%;
   padding: 4px 8px;
-  margin: 16px 0px;
+  margin: 0;
 }
 
 @media screen and (max-width: 480px) {
