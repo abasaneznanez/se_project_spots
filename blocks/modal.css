@@ -57,13 +57,13 @@
 12/9/2025 Lindelwe Myeza ask me to go back to the class as I had it .modal__close_type_preview so it match with the HTML class.
 12/7/2025 DOT REVISION ADDITION   change the class  .modal__close_type_preview for .modal__close-btn_type_preview
  */
-.modal__close-btn_type_preview {
+.modal__close_type_preview {
   top: 0;
   right: -52.5px;
   background-image: url(../images/deletebutton\ gray\ x\ black\ backgrd.svg);
 }
 /*DOT REVISION ADDITION  replace :hoover for :hover change the class  .modal__close_type_preview for .modal__close-btn_type_preview */
-.modal__close-btn_type_preview:hover {
+.modal__close_type_preview:hover {
   position: absolute;
   background-image: url(../images/deletebutton\ white\ x\ black\ backgrd.svg);
   background-color: transparent;
@@ -205,7 +205,7 @@ padding: 4px 8px; ELIMINATE   height: 18px;*/
 
 @media screen and (max-width: 627px) {
   /*placed below @media query 480px to avoid being overwritten*/
-  .modal__close-btn_type_preview {
+  .modal__close_type_preview {
     top: -48px;
     right: 0;
   }
